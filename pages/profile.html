@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Yueyan Zhang</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/mediaqueries.css" />
     <script src="../modules/jquery.min.js"></script>
@@ -15,16 +15,17 @@
         });
     </script>
   </head>
-  <body>
+  <body class="no-scroll">
     <div class="headerpage"></div>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="../assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="../assets/my_photo.jpg" alt="Yueyan profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Yueyan Zhang (章悦颜)</h1>
+        <p class="section__text__p2"><span class="typing" style="color:#858585"></span></p>
+        <br><br>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -32,7 +33,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='../pages/contact.html'">
             Contact Info
           </button>
         </div>
@@ -47,34 +48,21 @@
             src="../assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/zhyueyan'"
           />
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="../assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="../assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
         </div>
       </div>
     </section>
     <div class="footerpage"></div>
+    <script src="../scripts/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+      var typed = new Typed('.typing',{
+        strings: ["Coder", "Kernel Developer", "Photography Enthusiast"],
+        loop: true,
+        typeSpeed: 65,
+        backSpeed: 65
+      });
+    </script>
     <!-- <script src="script.js"></script> -->
   </body>
 </html>
